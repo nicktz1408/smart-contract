@@ -21,8 +21,20 @@ asset MyContract extends Contract {
   o String supplier
   o String asset
   o String qualityType
+  o Integer quantity
   o DateTime deliveryDate
   o String receipient
-  o Integer penaltyAmount
+  o Double penaltyAmount
+  o Double priceAmount
   o String deliveryLocation
+}
+
+transaction MyContractRequest extends Request {
+  o DateTime agreedDelivery
+  o DateTime deliveredAt
+  o Double goodsValue
+}
+
+transaction LateResponse extends Response {
+  o Double penalty
 }
