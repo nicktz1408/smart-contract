@@ -17,6 +17,8 @@ namespace org.example.mytemplate
 contract MyLogic over MyContract {
   // Simple Clause
   clause helloworld(request : MyRequest) : MyResponse {
+    let output: String = "";
+
     return MyResponse{ output: "Contract between " ++ contract.supplier ++ " and " ++ contract.receipient } // request.input }
   }
 }

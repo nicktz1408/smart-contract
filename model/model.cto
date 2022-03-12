@@ -21,7 +21,7 @@ asset MyContract extends Contract {
   o String supplier
   o String asset
   o String qualityType
-  o String deliveryDate
+  o DateTime deliveryDate
   o String receipient
   o Integer penaltyAmount
   o String deliveryLocation
